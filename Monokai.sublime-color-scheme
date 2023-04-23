@@ -1,0 +1,112 @@
+// Documentation at 
+// https://www.sublimetext.com/docs/color_schemes.html
+// especially the section "style rules"
+// Appendix: CSS Colors
+{
+	"variables":
+	{
+		"yellow": "hsl(54, 100%, 50%)",
+	},
+	"globals":
+	{
+		"background": "hsl(70, 0%, 15%)",
+	},
+	"rules":
+	[
+
+        { // this bracket shows what is possible qua configuration:
+            // 
+            "scope": "styled",
+
+
+            // "foreground": "",
+            // "foreground": "gold",
+            // "foreground": "indigo",
+            // "foreground": "lawngreen",
+            // "foreground": "pink",
+            // "foreground": "silver",
+            // "foreground": "lime",
+            // "foreground": "brown",
+            "foreground": "sandybrown",
+
+            // "background": "green",
+
+            // "font_style": "bold",
+            "font_style": "italic",
+            // "font_style": "glow",
+            // "font_style": "underline",
+            // "font_style": "stippled_underline",
+            // "font_style": "squiggly_underline",
+        },
+		{
+            
+            "scope": "comment.block.documentation.python",
+            "foreground": "var(yellow)"
+        },
+
+		{
+            
+            "scope": "constant.numeric",
+            "foreground": "var(yellow)"
+        },
+
+        {
+            
+            "scope": "keywords",
+            "foreground": "darkturquoise"
+        },
+        {
+            "scope": "blue",
+            "foreground": "dodgerblue"
+        },   
+        {
+            "scope": "lightBlue",
+            "foreground": "lightsteelblue",
+            "font_style": "underline"
+        },      
+        {
+            "scope": "white",
+            "foreground": "white"
+        },
+        {
+            
+            "scope": "green",
+            "foreground": "green"
+        },
+        {
+            
+            "scope": "orange",
+            "foreground": "orange"
+        },
+        {
+            
+            "scope": "red",
+            "foreground": "red"
+        },
+        {
+            
+            "scope": "lime",
+            "foreground": "lime",
+            // "font_style": "bold",
+        },
+{
+            
+            "scope": "underline",
+            "foreground": "",
+            "font_style": "underline",
+        },
+        {
+
+            "scope": "bold",
+            "foreground": "",
+            "font_style": "bold",
+        },
+        // {
+
+        //     "scope": "indigo",
+        //     "foreground": "",
+        //     "font_style": "purple",
+        // },
+
+	]
+}

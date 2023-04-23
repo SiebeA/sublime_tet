@@ -1,0 +1,19 @@
+{
+    "view": {
+        //set to true if you want to display line numbers (they may not be corresponding
+        //with original file lines due to expanded diff regions)
+        "line_numbers": true,
+
+        //set to true if you want lines to wrap on words (this is not recommended due to
+        //readability reasons)
+        "word_wrap": true,
+
+        //set to false if you don't want to highlight corresponding lines
+        "highlight_line": true,
+
+        //set to 'all' to display white space characters always, 'selection' to display
+        //only when selection is applied
+        "draw_white_space": "all"
+    },
+
+}

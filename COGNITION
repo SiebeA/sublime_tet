@@ -1,0 +1,67 @@
+%YAML 1.2
+---
+file_extensions:
+- txt
+- cog
+scope: source.example-c
+
+contexts:
+  prototype:
+    - include: comments
+  #   - include: markup
+
+  main:
+
+    - include: keywords
+    - include: Capitilizations
+    - include: punctuation
+    - include: numbers
+    - include: strings
+    - include: Misc
+
+
+  keywords:
+    - match: '\bSiebe|Jelle\b'
+      scope: keywords
+
+  Capitilizations:
+  # CASED non-BOL words: for identifying proper-nouns
+    - match: '(?<!^)(?<!DELIMITER )(?<![\.\?\!\,] )[A-Z][a-z]+\b' # negative lookbehind: If the Case follows eg a period/dot
+      scope: orange
+
+  # ACRONYMS:
+    - match: '\b(?<![A-Z]\s)\b[A-Z_]{2,}\b(?!\s[A-Z]{2,})\b' # using negative lookahead, here the pattern cannot be followed by at least 2 capped characters
+      scope: blue
+
+  punctuation:
+    - match: <\=|>\=|\=\=|<|>|\!\=
+      scope: keyword.operatorr.comparison.python
+
+    - match: \.|\?|@|\%|\!|\#|\%|\^|\&|\=|\*|\(|\) #punctuation       #(\w+\?(?<!$)) matches eg word? word2 but not ... word? ie the end of the line queion marks
+      scope: keyword.operator.arithmetic.python
+
+  numbers:
+    - match: '\b(-)?[0-9.]\w*'
+      scope: constant.numeric
+
+  strings:
+    - match: '“.+?”'
+      scope: green
+      push: inside_string4
+
+    - match: '".+?"'
+      scope: green # in between '"'
+      push: inside_string
+
+# this colours what is inside the '" "'
+  inside_string:
+    - meta_include_prototype: true
+    - meta_scope: lime
+      scope: lime
+    - match: '.+?'
+      scope: green # colours the 2nd '"'
+      pop: true
+
+  inside_string4:
+    - meta_include_prototype: true
+    # - meta_scope: blue # this colours the inside characters (in between the "`")

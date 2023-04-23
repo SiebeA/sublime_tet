@@ -1,0 +1,25 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Monokai.sublime-color-scheme",
+
+	"show_encoding": true,
+	"font_size": 12,
+
+	"word_wrap": true,
+
+	"default_extension": "txt",
+
+	
+	"tab_completion": false,
+	"auto_complete": false,
+
+	"open_files_in_new_window": "always",
+
+	"auto_match_enabled": true,
+
+	
+
+}

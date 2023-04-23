@@ -101,12 +101,11 @@
             "foreground": "",
             "font_style": "bold",
         },
-        // {
+        {
 
-        //     "scope": "indigo",
-        //     "foreground": "",
-        //     "font_style": "purple",
-        // },
+            "scope": "light_blue",
+            "foreground": "darkturquoise",
+        },
 
 	]
 }

@@ -2,10 +2,16 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
+		"BracketHighlighter",
+		"CSS Table of Contents",
+		"Dictionary",
+		"Google Spell Check",
+		"JSON Reindent",
+		"Markdown Extended",
+		"MarkdownLivePreview",
+		"MarkdownPreview",
 		"Package Control",
-		"PlainTasks",
-		"Sublimerge 3",
-		"Sync View Scroll",
+		"PackageResourceViewer",
 	],
 	"in_process_packages":
 	[

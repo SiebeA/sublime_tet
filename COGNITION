@@ -26,7 +26,7 @@ contexts:
 
   Capitilizations:
   # CASED non-BOL words: for identifying proper-nouns
-    - match: '(?<!^)(?<!DELIMITER )(?<![\.\?\!\,] )[A-Z][a-z]+\b' # negative lookbehind: If the Case follows eg a period/dot
+    - match: '(?<!^)(?<![\.\?\!\,] )[A-Z][a-z]+\b' # negative lookbehind: If the Case follows eg a period/dot
       scope: orange
 
   # ACRONYMS:

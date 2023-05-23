@@ -2,12 +2,13 @@
 	{ "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
 	{ "keys": ["alt+up"], "command": "swap_line_up" },
 	{ "keys": ["alt+down"], "command": "swap_line_down" },
-	{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
-	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+	// { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+	// { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
 	{ "keys": ["ctrl+shift+a"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 
 	{ "keys": ["ctrl+shift+u"], "command": "upper_case" },
 	{ "keys": ["ctrl+shift+l"], "command": "lower_case" },
+
 
 
 	{ "keys": ["ctrl+shift+t"],"command": "Terminus: Toggle Panel"},
@@ -41,6 +42,7 @@
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
 		]
 	},
+	
 	{ "keys": ["`"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -50,5 +52,11 @@
 			{ "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
 		]
 	},
+
+	[
+    // plugin: Clickable URLs
+    // "ctrl + right click" = open URL in the browser
+    { "button": "button1", "modifiers": ["ctrl"], "press_command": "open_context_url" },
+]
 
 ]

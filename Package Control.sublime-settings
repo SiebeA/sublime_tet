@@ -3,6 +3,8 @@
 	"installed_packages":
 	[
 		"BracketHighlighter",
+		"Clickable URLs",
+		"Compare Side-By-Side",
 		"CSS Table of Contents",
 		"Dictionary",
 		"Google Spell Check",
@@ -10,8 +12,10 @@
 		"Markdown Extended",
 		"MarkdownLivePreview",
 		"MarkdownPreview",
+		"Open URL",
 		"Package Control",
 		"PackageResourceViewer",
+		"SublimeREPL",
 	],
 	"in_process_packages":
 	[
